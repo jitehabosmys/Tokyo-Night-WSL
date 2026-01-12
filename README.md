@@ -4,7 +4,8 @@
 >
 > *“Arch 灵魂，Tokyo 美学，WSL 核心。”*
 
-![Showcase](https://github.com/jitehabosmys/Tokyo-Night-WSL/blob/master/screenshots/showcase.png)
+
+![Showcase](./screenshots/showcase.png)
 
 ## ✨ Features
 
