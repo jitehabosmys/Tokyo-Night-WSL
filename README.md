@@ -1,5 +1,10 @@
 # 🌌 Tokyo-Night-WSL
 
+![Shell](https://img.shields.io/badge/shell-bash-green.svg)
+![Theme](https://img.shields.io/badge/theme-tokyo--night-blue.svg)
+![WSL](https://img.shields.io/badge/env-WSL2-orange.svg)
+![Prompt](https://img.shields.io/badge/prompt-starship-red.svg)
+
 > **A modern Bash environment powered by Starship & ble.sh.**
 >
 > *“Arch 灵魂，Tokyo 美学，WSL 核心。”*
