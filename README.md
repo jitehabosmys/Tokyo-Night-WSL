@@ -85,7 +85,7 @@
 
 ```bash
 
-# 更新源并安装欢迎界面所需的工具
+# 安装 欢迎界面所需的工具
 sudo apt update
 sudo apt install -y neofetch fortune-mod lolcat
 
@@ -101,13 +101,13 @@ make -C ble.sh install PREFIX=~/.local
 ### 2. 克隆本仓库
 
 ```bash
-git clone git@github.com:你的用户名/Tokyo-Night-WSL.git ~/dotfiles
+git clone git@github.com:jitehabosmys/Tokyo-Night-WSL.git ~/dotfiles
 
 ```
 
 ### 3. 部署配置文件 (Symlink)
 
-使用软链接覆盖系统默认配置（建议先备份你原本的 .bashrc）：
+使用软链接覆盖系统默认配置：
 
 ```bash
 # 备份原配置 (可选)
