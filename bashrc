@@ -117,40 +117,39 @@ if ! shopt -oq posix; then
 fi
 export PATH=$HOME/.local/bin:$PATH
 
-# --- 极客究极稳健配置开始 ---
+# --- GEEK CONFIGUARION START  ---
 
-# 1. 自动清屏
+# 1. Clear screen
 clear
 
-# 2. 获取时间并设置问候语
+# 2. Get time and set greeting
 HOUR=$(date +%H)
 NOW=$(date +"%Y-%m-%d %H:%M:%S")
 if [ $HOUR -lt 12 ]; then GREET="GOOD MORNING";
 elif [ $HOUR -lt 18 ]; then GREET="GOOD AFTERNOON";
 else GREET="GOOD EVENING"; fi
 
-# 3. 顶部：显示伪装 Arch 的系统名片 (简洁模式)
-# --off_all 关闭所有图标和文字，只显示核心项，防止占满屏幕
+# 3. Top: display disguised Arch system card
 echo "[$NOW]" | lolcat
 neofetch --ascii_distro arch --compact
 
-# 4. 中部：问候语 (分两行，名字用斜体)
+# 4. Middle: Greeting
 echo ""
 figlet -f small "$GREET" | lolcat
 figlet -f slant "$(whoami | tr '[:lower:]' '[:upper:]')" | lolcat
 
-# 5. 底部：随机动物 + 分割线
+# 5. Bottome: Random animal + random fortune 
 echo "-------------------------------------------------------" | lolcat
 fortune | cowsay -f $(ls /usr/share/cowsay/cows | shuf -n 1) | lolcat
 echo "-------------------------------------------------------" | lolcat
 
-# --- 极客究极稳健配置结束 ---
+# --- GEEK CONFIGUARTION END ---
 
-# 先清空原生提示符，防止 ble.sh 捕获到它
+# Clear native prompt first to prevent ble.sj from capturing it
 export PS1=""
 
-# 启动 Starship
+# Start Starship
 eval "$(starship init bash)"
 
-# 确保 ble.sh 在最后加载
+# Ensure ble.sh loads last
 [[ -f ~/.local/share/blesh/ble.sh ]] && source ~/.local/share/blesh/ble.sh

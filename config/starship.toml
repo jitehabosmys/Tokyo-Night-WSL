@@ -66,8 +66,9 @@ style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [os]
-disabled = false  # 必须确保不是 disabled
+disabled = false  # # Must ensure it's not disabled
 
 [os.symbols]
-Ubuntu = " "    # 重点在这里：把 Ubuntu 识别到的图标改为 Arch 的图标
-Linux = " "     # 这样即使识别为通用 Linux 也是 Arch 图标
+Ubuntu = " "    # Force Arch icon to Ubuntu
+Linux = " "     
+
