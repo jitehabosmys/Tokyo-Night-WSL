@@ -14,7 +14,7 @@
 
 ## ✨ Features
 
-* **🌈 Stunning Welcome Interface**: 每次启动时自动显示彩虹色的系统信息与随机极客语录。
+* **🌈 Stunning Welcome Interface**: 每次启动时自动显示彩虹色的问候信息与随机极客语录。
 * **🎨 Tokyo Night Theme**: 深度集成的东京夜色主题，从终端背景到补全提示。
 * **🚀 Starship Prompt**: 定制化的 "Arch Linux" 胶囊风格提示符。
 * **⚡ ble.sh Integration**: 为 Bash 带来类似 Zsh 的语法高亮和自动补全（紫色霓虹风）。

@@ -131,7 +131,7 @@ else GREET="GOOD EVENING"; fi
 
 # 3. Top: display disguised Arch system card
 echo "[$NOW]" | lolcat
-neofetch --ascii_distro arch --compact
+# neofetch --ascii_distro arch --compact
 
 # 4. Middle: Greeting
 echo ""
